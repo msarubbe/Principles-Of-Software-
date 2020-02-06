@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet"
+        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <%- include('partials/css.ejs') %>
+
+
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12">
+                        <a id="burger-icon-1" href="#" data-target="sidebar-1"
+                            class="left sidenav-trigger show-on-medium"><i class="material-icons">menu</i></a>
+
+
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="https://codepen.io/collection/nbBqgY" target="_blank">Menu item</a></li>
+                            <li><a href="https://codepen.io/collection/nbBqgY" target="_blank">Menu item</a></li>
+                            <li><a href="https://codepen.io/collection/nbBqgY" target="_blank">Menu item</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SIDEBAR 1 - HAS .SIDENAV-FIXED -->
+    <ul id="sidebar-1" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="http://placehold.it/640x480/555">
+                </div>
+                <a href="#!user"><img class="circle" src="http://placehold.it/512x512/333"></a>
+                <a href="#!name"><span class="white-text name">John Doe</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="/about" target="_blank">nick</a></li>
+        <li><a href="https://twitter.com/MaterializeCSS" target="_blank">Twitter</a></li>
+        <li><a href="http://next.materializecss.com/getting-started.html" target="_blank">Docs</a></li>
+    </ul>
+
+
+
+
+    <main style="background-color: #F9F9F9;">
+        <div class="section" style="background-image: linear-gradient(180deg, #F9F9F9 88%, #EBE9E9 100%);">
+
+            <!--   Icon Section   -->
+            <div class="row" >
+
+                <div class="carousel" style="height: 30vh;width: 80vw;margin-left: -4em;">
+                    <a class="carousel-item" href="#one!">
+                        <div id= "pic1" class="card" style="height: 100%;width: 345.56px;"></div>
+                    </a>
+                    <a class="carousel-item" href="#two!">
+                        <div id= "pic2" class="card" style="height: 100%;width: 345.56px;"></div>
+                    </a>
+                    <a class="carousel-item" href="#three!">
+                        <div id= "pic3" class="card" style="height: 100%;width: 345.56px;"></div>
+                    </a>
+                    <a class="carousel-item" href="#four!">
+                        <div id= "pic4" class="card" style="height: 100%;width: 345.56px;"></div>
+                    </a>
+                    <a class="carousel-item" href="#five!">
+                        <div id= "pic5" class="card" style="height: 100%;width: 345.56px;"></div>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+        
+        <%- include('partials/horizontal_scroll.ejs') %>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <%- include('partials/javascript.ejs') %>
+</body>
+
+</html>

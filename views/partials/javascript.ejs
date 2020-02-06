@@ -1,0 +1,52 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+<script>
+   
+$(document).ready(function(){
+$('.sidenav').sidenav();
+$('#sidebar-1').sidenav({ edge: 'left' });
+$('#sidebar-2').sidenav({ edge: 'right' });
+
+// ADD CLASS TO SIDEBAR-2 VIA JAVASCRIPT
+// See: https://stackoverflow.com/questions/29593944/css-media-query-adding-class-to-html
+// And: http://jsfiddle.net/9y1p42Lq/
+//
+// ON DOCUMENT READY
+if ($(window).width() >= 1925) {
+$('#sidebar-2').addClass("sidenav-fixed");
+$('#burger-icon-2').addClass("hide");
+}
+else {
+$('#sidebar-2').removeClass("sidenav-fixed");
+$('#burger-icon-2').removeClass("hide");
+}
+});
+
+// ON RESIZE
+$(window).resize(function() {
+if ($(window).width() >= 1925) {
+$('#sidebar-2').addClass("sidenav-fixed");
+$('#burger-icon-2').addClass("hide");
+}
+else {
+$('#sidebar-2').removeClass("sidenav-fixed");
+$('#burger-icon-2').removeClass("hide");
+}
+});
+
+</script>
+
+ <script>
+ $(document).ready(function(){
+    $('.carousel').carousel({
+        padding:300,
+        // indicators:true,
+        
+    });
+    setInterval(function() {
+    $('.carousel').carousel('next');
+  }, 7000); // every 2 seconds
+  });
+  
+ </script>
